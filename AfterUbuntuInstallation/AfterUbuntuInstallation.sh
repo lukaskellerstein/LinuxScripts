@@ -22,9 +22,15 @@ sudo apt-get -y install gdebi
 
 sudo apt-get -y install unity-tweak-tool
 
+# ********************************
+# HTOP - terminal CPU,RAM,HDD statistics
+# ********************************
+
+sudo apt-get -y install htop
+
 
 # ********************************
-# Flatbulous flat theme
+# Flatbulous flat theme - NEFUNGOVALO MI
 # ********************************
 
 wget -q -O - http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
@@ -43,6 +49,7 @@ mkdir .themes
 sudo add-apt-repository ppa:noobslab/icons
 sudo apt-get -y update
 sudo apt-get -y install ultra-flat-icons
+
 
 # ********************************
 # Docker CE installation
@@ -67,6 +74,14 @@ sudo apt-get -y update
 
 sudo apt-get -y install docker-ce
 
+# docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+
+
+
+
 # ********************************
 # Dotnet Core 2.0 installation
 # ********************************
@@ -87,8 +102,9 @@ sudo apt-get -y install dotnet-sdk-2.0.0
 # ********************************
 # Chrome installation
 # ********************************
-
+# manualne
 
 # ********************************
 # VSCode installation
 # ********************************
+#manualne
