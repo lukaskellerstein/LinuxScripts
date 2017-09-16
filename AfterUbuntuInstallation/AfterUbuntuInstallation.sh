@@ -24,9 +24,17 @@ sudo apt-get -y install unity-tweak-tool
 
 # ********************************
 # HTOP - terminal CPU,RAM,HDD statistics
+# $: htop
 # ********************************
 
 sudo apt-get -y install htop
+
+# ********************************
+# NLOAD - Network IP trafic statistics
+# $: nload
+# ********************************
+
+sudo apt-get install nload
 
 
 # ********************************
