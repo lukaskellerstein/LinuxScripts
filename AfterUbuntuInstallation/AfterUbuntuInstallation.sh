@@ -51,52 +51,6 @@ sudo apt-get -y update
 sudo apt-get -y install ultra-flat-icons
 
 
-# ********************************
-# Docker CE installation
-# ********************************
-
-sudo apt-get -y update
-
-sudo apt-get -y install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common
-
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
-
-sudo apt-get -y update
-
-sudo apt-get -y install docker-ce
-
-# docker-compose
-sudo curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-
-
-
-
-
-# ********************************
-# Dotnet Core 2.0 installation
-# ********************************
-
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg 
-
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg 
-
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod zesty main" > /etc/apt/sources.list.d/dotnetdev.list' 
-
-sudo apt-get -y update
-
-sudo apt-get -y install dotnet-sdk-2.0.0
-
-
 
 
 # ********************************
@@ -104,7 +58,16 @@ sudo apt-get -y install dotnet-sdk-2.0.0
 # ********************************
 # manualne
 
+
 # ********************************
-# VSCode installation
+# Spotify installation
 # ********************************
-#manualne
+# https://www.spotify.com/cz/download/linux/
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886 0DF731E45CE24F27EEEB1450EFDC8610341D9410
+
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+
+sudo apt-get update
+
+sudo apt-get install spotify-client
