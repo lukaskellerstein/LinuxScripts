@@ -38,6 +38,13 @@ sudo apt-get install nload
 
 
 # ********************************
+# GUAKE - cool Terminal
+# ********************************
+
+sudo apt-get install guake
+
+
+# ********************************
 # Flatbulous flat theme - NEFUNGOVALO MI
 # ********************************
 
