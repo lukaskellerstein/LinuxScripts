@@ -58,3 +58,36 @@ sudo apt-get -y install dotnet-sdk-2.0.0
 # ********************************
 curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install -y nodejs
+
+
+# ********************************
+# Robot 3T - MongoDB management studio - installation
+# ********************************
+#manualne
+
+
+# ********************************
+# Fiddler installation
+# ********************************
+# 1) nainstalovat mono - http://www.mono-project.com/download/#download-lin
+# 2) stahnout Fiddler, rozbalit a spustit v terminal > $ mono Fiddler.exe
+
+
+
+# ********************************
+# Postman installation
+# ********************************
+#manualne jako chrome extension
+# + Postman Interceptor
+
+
+# ********************************
+# MQTT.fx installation
+# ********************************
+#manualne pres web - debian package
+
+
+# ********************************
+# Inkscape installation
+# ********************************
+#manualne pres Software manager

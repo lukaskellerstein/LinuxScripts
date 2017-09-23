@@ -34,7 +34,20 @@ sudo apt-get -y install htop
 # $: nload
 # ********************************
 
-sudo apt-get install nload
+sudo apt-get -y install nload
+
+# ********************************
+# Net Tools - Ifconfig, route, nameif, ipmaddr, arp
+# ********************************
+
+sudo apt-get -y install net-tools
+
+# ********************************
+# Nmap - network scanning
+# $: sudo nmap -sP 192.168.1.0/24 
+# ********************************
+
+sudo apt-get -y install nmap
 
 
 # ********************************
