@@ -17,12 +17,6 @@ sudo apt-get -y dist-upgrade
 sudo apt-get -y install gdebi
 
 # ********************************
-# Tweak tool installation
-# ********************************
-
-sudo apt-get -y install unity-tweak-tool
-
-# ********************************
 # HTOP - terminal CPU,RAM,HDD statistics
 # $: htop
 # ********************************
@@ -56,6 +50,12 @@ sudo apt-get -y install nmap
 
 sudo apt-get install guake
 
+
+# ********************************
+# Tweak tool installation - hlavne kvuli Flatbulous theme
+# ********************************
+
+sudo apt-get -y install unity-tweak-tool
 
 # ********************************
 # Flatbulous flat theme - NEFUNGOVALO MI
@@ -93,9 +93,18 @@ sudo apt-get -y install ultra-flat-icons
 # https://www.spotify.com/cz/download/linux/
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886 0DF731E45CE24F27EEEB1450EFDC8610341D9410
-
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
-
 sudo apt-get update
-
 sudo apt-get install spotify-client
+
+
+# ********************************
+# Vystrizky / Snip Tool - Shutter
+# ********************************
+sudo apt-get -y install shutter
+
+
+# ********************************
+# TeamViewer
+# ********************************
+# manualne

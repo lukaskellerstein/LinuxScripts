@@ -1,12 +1,6 @@
 
 
 # ********************************
-# VSCode installation
-# ********************************
-#manualne
-
-
-# ********************************
 # Docker CE installation
 # ********************************
 
@@ -54,10 +48,32 @@ sudo apt-get -y install dotnet-sdk-2.0.0
 
 
 # ********************************
+# Golang installation
+# ********************************
+
+sudo add-apt-repository ppa:gophers/archive
+sudo apt update
+sudo apt-get -y install golang-1.8-go
+
+export GOROOT=/usr/lib/go-1.8/bin
+export GOPATH=$HOME/Projects
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+
+# ********************************
 # NodeJS installation
 # ********************************
 curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install -y nodejs
+
+
+
+
+
+# ********************************
+# VSCode installation
+# ********************************
+#manualne
 
 
 # ********************************
