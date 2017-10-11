@@ -43,6 +43,16 @@ sudo apt-get -y install net-tools
 
 sudo apt-get -y install nmap
 
+# ********************************
+# Wireshark - network analysis
+# ********************************
+
+sudo add-apt-repository ppa:wireshark-dev/stable
+sudo apt-get update
+sudo apt-get install wireshark
+
+
+
 
 # ********************************
 # GUAKE - cool Terminal
@@ -108,3 +118,15 @@ sudo apt-get -y install shutter
 # TeamViewer
 # ********************************
 # manualne
+
+
+# ********************************
+# xRDP - Remote desktop to Windows machine
+# ********************************
+sudo apt-get -y install xrdp
+
+# ********************************
+# TightVNC - Remote desktop to Linux machine - IT IS ONLY CLIENT !!!
+# ********************************
+sudo apt-get -y install xtightvncviewer
+# pouziti je dat do bashe > $ xtightvncviewer 192.168.1.234:0
