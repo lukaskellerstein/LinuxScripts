@@ -52,6 +52,11 @@ sudo apt-get update
 sudo apt-get install wireshark
 
 
+# ********************************
+# Hardware information software
+# ********************************
+sudo apt-get install -y hardinfo
+
 
 
 # ********************************
