@@ -63,7 +63,7 @@ sudo apt-get install -y hardinfo
 # GUAKE - cool Terminal
 # ********************************
 
-sudo apt-get install guake
+sudo apt-get -y install guake
 
 
 # ********************************

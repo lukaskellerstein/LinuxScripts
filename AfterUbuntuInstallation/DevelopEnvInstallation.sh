@@ -53,11 +53,11 @@ sudo apt-get -y install dotnet-sdk-2.0.0
 
 sudo add-apt-repository ppa:gophers/archive
 sudo apt update
-sudo apt-get -y install golang-1.8-go
+sudo apt-get -y install golang-1.9-go
 
-export GOROOT=/usr/lib/go-1.8/bin
-export GOPATH=$HOME/Projects
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export GOROOT=/usr/lib/go-1.9/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT:$GOPATH
 
 
 # ********************************
