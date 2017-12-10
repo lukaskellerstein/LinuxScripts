@@ -39,11 +39,11 @@ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microso
 
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg 
 
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod zesty main" > /etc/apt/sources.list.d/dotnetdev.list' 
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
 
 sudo apt-get -y update
 
-sudo apt-get -y install dotnet-sdk-2.0.0
+sudo apt-get -y install dotnet-sdk-2.0.2
 
 
 
@@ -54,6 +54,11 @@ sudo apt-get -y install dotnet-sdk-2.0.0
 sudo add-apt-repository ppa:gophers/archive
 sudo apt update
 sudo apt-get -y install golang-1.9-go
+
+#create folder 'go' in $HOME
+# +
+# pernamently saved environment variables
+# https://askubuntu.com/questions/58814/how-do-i-add-environment-variables
 
 export GOROOT=/usr/lib/go-1.9/bin
 export GOPATH=$HOME/go
@@ -66,8 +71,16 @@ export PATH=$PATH:$GOROOT:$GOPATH
 curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
+#AngularCLI
+npm install -g @angular/cli
 
-
+# ********************************
+# YARN installation
+# ********************************
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update 
+sudo apt-get install yarn
 
 
 # ********************************
@@ -83,14 +96,6 @@ sudo apt-get install -y nodejs
 
 
 # ********************************
-# Fiddler installation
-# ********************************
-# 1) nainstalovat mono - http://www.mono-project.com/download/#download-lin
-# 2) stahnout Fiddler, rozbalit a spustit v terminal > $ mono Fiddler.exe
-
-
-
-# ********************************
 # Postman installation
 # ********************************
 #manualne jako chrome extension
@@ -101,7 +106,7 @@ sudo apt-get install -y nodejs
 # MQTT.fx installation
 # ********************************
 #manualne pres web - debian package
-
+#http://www.jensd.de/apps/mqttfx/1.3.1/
 
 # ********************************
 # Inkscape installation

@@ -1,6 +1,6 @@
 # ********************************
 # ********************************
-# Ubuntu 17.04 after installation script
+# Ubuntu 16.04 after installation script
 # v0.0.1
 # ********************************
 # ********************************
@@ -60,10 +60,11 @@ sudo apt-get install -y hardinfo
 
 
 # ********************************
-# GUAKE - cool Terminal
+# Terminator - cool Terminal
 # ********************************
-
-sudo apt-get -y install guake
+sudo add-apt-repository ppa:gnome-terminator
+sudo apt-get update
+sudo apt-get install terminator
 
 
 # ********************************
