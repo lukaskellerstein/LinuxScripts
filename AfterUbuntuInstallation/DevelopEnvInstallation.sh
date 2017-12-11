@@ -118,3 +118,16 @@ sudo apt-get install yarn
 # Arduino IDE installation
 # ********************************
 #manualne https://www.arduino.cc/en/Guide/Linux
+
+#add ESP8266 to Preferences
+#https://github.com/esp8266/Arduino
+
+
+#add to VSCode preferences
+# "files.associations": {
+#         "*.ino": "cpp"
+#     },
+# "arduino.path": "/home/cellarstone/Apps/arduino-1.8.5"
+
+
+
