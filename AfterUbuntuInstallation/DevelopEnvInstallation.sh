@@ -141,6 +141,11 @@ sudo apt-get install yarn
 # SparkFun_Micro_OLED_Breakout
 # Timer-master
 
+#Allow USB for uploading to WeMos D1 mini
+# https://www.arduino.cc/en/Guide/Linux
+sudo usermod -a -G dialout <username> #cellarstone
+# reboot
+
 
 
 
