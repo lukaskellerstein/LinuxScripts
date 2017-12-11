@@ -124,10 +124,25 @@ sudo apt-get install yarn
 
 
 #add to VSCode preferences
-# "files.associations": {
+# {
+#     "files.associations": {
 #         "*.ino": "cpp"
 #     },
-# "arduino.path": "/home/cellarstone/Apps/arduino-1.8.5"
+#     "arduino.path": "/home/cellarstone/Apps/arduino-1.8.5",
+#     "C_Cpp.intelliSenseEngine": "Tag Parser"
+# }
+
+#Libraries list (in /home/cellarstone/Arduino/libraries)
+#add with Arduino IDE, or download it from github
+# Adafruit_Sensor-master
+# Adafruit_SSD1306
+# DHT_sensor_library
+# PubSubClient
+# SparkFun_Micro_OLED_Breakout
+# Timer-master
+
+
+
 
 
 
