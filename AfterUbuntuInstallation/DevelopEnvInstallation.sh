@@ -112,3 +112,9 @@ sudo apt-get install yarn
 # Inkscape installation
 # ********************************
 #manualne pres Software manager
+
+
+# ********************************
+# Arduino IDE installation
+# ********************************
+#manualne https://www.arduino.cc/en/Guide/Linux
