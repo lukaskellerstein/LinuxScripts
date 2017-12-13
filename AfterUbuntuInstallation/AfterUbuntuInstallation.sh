@@ -7,7 +7,39 @@
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
-sudo apt-get -y dist-upgrade
+#sudo apt-get -y dist-upgrade
+
+
+
+# ********************************
+# Tweak tool installation - hlavne kvuli Flatbulous theme
+# ********************************
+
+sudo apt-get -y install unity-tweak-tool
+
+# ********************************
+# Flatbulous flat theme - NEFUNGOVALO MI
+# ********************************
+
+wget -q -O - http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu xenial-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'
+sudo apt-get -y update
+sudo apt-get -y install ubuntu-tweak
+
+#theme
+sudo add-apt-repository ppa:noobslab/themes
+sudo apt-get -y update
+sudo apt-get -y install flatabulous-theme
+
+mkdir .themes
+
+#icons
+sudo add-apt-repository ppa:noobslab/icons
+sudo apt-get -y update
+sudo apt-get -y install ultra-flat-icons
+
+
+
 
 
 # ********************************
@@ -65,35 +97,6 @@ sudo apt-get install -y hardinfo
 sudo add-apt-repository ppa:gnome-terminator
 sudo apt-get update
 sudo apt-get install terminator
-
-
-# ********************************
-# Tweak tool installation - hlavne kvuli Flatbulous theme
-# ********************************
-
-sudo apt-get -y install unity-tweak-tool
-
-# ********************************
-# Flatbulous flat theme - NEFUNGOVALO MI
-# ********************************
-
-wget -q -O - http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu xenial-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'
-sudo apt-get -y update
-sudo apt-get -y install ubuntu-tweak
-
-#theme
-sudo add-apt-repository ppa:noobslab/themes
-sudo apt-get -y update
-sudo apt-get -y install flatabulous-theme
-
-mkdir .themes
-
-#icons
-sudo add-apt-repository ppa:noobslab/icons
-sudo apt-get -y update
-sudo apt-get -y install ultra-flat-icons
-
 
 
 
