@@ -1,4 +1,11 @@
 
+# ********************************
+# Git
+# ********************************
+
+sudo apt-get -y install git
+
+
 
 # ********************************
 # Docker CE installation
@@ -121,7 +128,6 @@ sudo apt-get install yarn
 
 #add ESP8266 to Preferences
 #https://github.com/esp8266/Arduino
-
 
 #add to VSCode preferences
 # {
